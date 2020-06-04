@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7ead25a13a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/detail.css">
+    <title>product cart</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark nav-bg">
+            <div class="container">
+            <a class="navbar-brand" href="index.html">Glomour furnitures</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+             
+              <ul class="navbar-nav ml-lg-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">about us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" >Cart<span class="badge badge-danger ml-1"> 0</span></a>
+                  </li>
+              </ul>
+              
+            </div>
+        </div>
+          </nav>
+          <div class="prod-banner">
+               <div class="prod">
+                <h2>product cart</h2>
+                
+                </div>
+                <div>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item">product details</li>
+                    <li class="breadcrumb-item active" aria-current="page">cart</li>
+                </ol>
+            </div>
+          </div>
+          <div class="step-container">
+              <div class="container">
+                  <div class="stepper">
+                      <ul class="row">
+                          <li class="col-md-3 active">
+                              <span data-text="Cart item">
+                                <i class="far fa-check-circle"></i>
+                              </span>
+                                <span><i class="fas fa-arrow-right"></i></span> 
+                          </li>
+                          <li class="col-md-3 ">
+                            <span data-text="delivery info">
+                                <i class="far fa-times-circle"></i>
+                            </span>
+                            <span><i class="fas fa-arrow-right"></i></span>
+                        </li>
+                        <li class="col-md-3 stp">
+                            
+                            <span data-text="payment">
+                                <i class="far fa-times-circle"></i>
+                            </span>
+                            <span><i class="fas fa-arrow-right"></i></span>
+                        </li>
+                        <li class="col-md-3 stp">
+                            <span data-text="receipt">
+                                <i class="far fa-times-circle"></i>
+                            </span>
+                            
+                        </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+    </header>
+    <main class="content">
+    <section class="table-wrapper">
+             <div class="container">
+               <div class="table-header cart-block">
+                   <div>
+                       <span>product</span>
+                   </div>
+                   <div></div>
+                   <div>
+                       <span>quantity</span>
+                   </div>
+                   <div class="text-right">
+                       <span>price</span>
+                   </div>
+               </div>
+               <div class="clearfix">
+                   <div class="cart-item cart-block">
+                       <div class="image">
+                           <img src="imgs/cart-img.jpg" alt="">
+                       </div>
+                       <div class="title"><h4>product name</h4></div>
+                       <div class="quantity"><input type="number" class="form-control" value="1" name="" onkeypress="return event.charCode >=48 && event.charCode <=57"></div>
+                       <div class="price">
+                            <span class=" final head3">$1,800</span>
+                       </div>
+                       <span class="delete-icon">&times;</span>
+                   </div>
+                   <div class="cart-item cart-block">
+                    <div class="image">
+                        <img src="imgs/cart-img.jpg" alt="">
+                    </div>
+                    <div class="title"><h4>product name</h4></div>
+                    <div class="quantity"><input type="number" class="form-control" value="2" name="" onkeypress="return event.charCode >=48 && event.charCode <=57"></div>
+                    <div class="price">
+                         <span class=" final head3">$1,500</span>
+                    </div>
+                    <span class="delete-icon">&times;</span>
+                </div>
+                <div class="cart-item cart-block">
+                    <div class="image">
+                        <img src="imgs/cart-img.jpg" alt="">
+                    </div>
+                    <div class="title"><h4>product name</h4></div>
+                    <div class="quantity"><input type="number" class="form-control" value="1" name="" onkeypress="return event.charCode >=48 && event.charCode <=57"></div>
+                    <div class="price">
+                         <span class=" final head3">$2,300</span>
+                    </div>
+                    <span class="delete-icon">&times;</span>
+                </div>
+               </div>
+               <div class="clearfix">
+                   <div class="cart-footer cart-block">
+                       <div>
+                           <strong>Discount</strong>
+
+                       </div>
+                       <div class="text-right"> 
+                           <span>$00.00</span>
+                       </div>
+                   </div>
+                   <div class="cart-footer cart-block">
+                    <div>
+                        <strong>Shipping</strong>
+
+                    </div>
+                    <div class="text-right"> 
+                        <span>$30.00</span>
+                    </div>
+                </div>
+                <div class="cart-footer cart-block">
+                    <div>
+                        <strong class="total">Total</strong>
+
+                    </div>
+                    <div class="text-right"> 
+                        <h4><span>$5,630</span></h4>
+                    </div>
+                </div>
+               </div>
+               <div class="clearfix">
+                   <div class="row py-4">
+                       <div class="col-sm-6 text-capitalize">
+                           <a href="index.html" class="btn btn-light p-3"> continue shopping</a>
+                       </div>
+                       <div class="col-sm-6 text-right text-capitalize">
+                           <a href="checkout.html" class="btn btn-warning p-3">proceed to checkout</a>
+                       </div>
+                   </div>
+               </div>
+             </div>
+    </section>
+    </main>
+    <div class="footer">
+        <div class="inner-footer">
+            <div class="addr">
+                 <h1>visit our showroom</h1>
+                 <p>201 garrick avenue ,abuja, Nigeria</p>
+                 <p>mon 9am - 6pm | sat 10am - 4pm</p>
+            </div>
+            <div class="phone">
+                 <a href="#" class="btn btn-outline-warning">Get direction</a>
+                 <h3>+23490-4352-5686</h3>
+            </div>
+        </div>
+        <div class="copy text-center">
+            &copy; henry-coding-stack 2020
+        </div>
+
+   </div>
+ 
+    
+
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

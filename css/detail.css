@@ -1,0 +1,529 @@
+header{
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+}
+
+.prod-banner{
+    position: relative;
+    width: 100%;
+    height:60vh;
+    background:linear-gradient(180deg, rgba(0,0,0,0.8), rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url(../imgs/fur-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.prod-banner .prod{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    
+}
+.prod h2{
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.breadcrumb{
+    text-align: center;     
+    background: transparent;
+     font-size: 18px;
+    position: absolute;
+     bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+      
+}
+.product{
+    padding: 20px 0;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 50px;
+    background-color: #fff;
+}
+
+
+.product-text h2{
+       text-transform: uppercase;
+       font-size: 32px;
+       font-family: 'Bree Serif', serif;
+}
+.product-text h6{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f0bd05;
+}
+ .product-text .prod-desc h4{
+         text-transform: capitalize;
+         font-size: 28px;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.product-text .prod-desc p{
+     font-size: 18px;
+     font-family: 'Times New Roman', Times, serif;
+     letter-spacing: 2px;
+     line-height: 25px;
+     font-weight: 200;
+     color: rgb(109, 106, 106);
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background: rgb(104, 103, 103);
+    opacity: 0.3;
+    margin-bottom: 20px;
+}
+table tbody th{
+    text-transform: capitalize;
+    font-size: 22px;
+    color: rgb(109, 106, 106);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.cart-btn{
+    margin: 10px;
+}
+.cart-btn a{
+    padding: 10px 20px;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    display: block;
+    background: #000;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.5);;
+}
+.cart-btn a:hover{
+    background: #fff;
+    color: #000;
+}
+.nav-tabs .nav-item .nav-link{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+}
+.nav-tabs .nav-item .nav-link.active{
+    border-top-color: #f0bd05;
+    border-top-width: 3px !important;
+}
+.tab-content h3{
+    text-align: center;
+}
+.product-sam{
+    width: 100%;
+    height: 480px;
+    box-sizing: border-box;
+    border: 1px solid #f0bd05;
+    position: relative;
+    padding: 10px;
+    background-color: #f1f1f1;
+    transition: .5s;
+}
+.product-sam .product-img{
+    width: 100%;
+    height: 280px;
+}
+.dimen-box{
+     width: 100%;
+     height: 180px;
+}
+.dimen-box img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.tab-pane .row h4{
+    text-transform: capitalize;
+    font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+.tab-pane .row .col-lg-8 p{
+    line-height: 30px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.product-sam .product-img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.product-sam .p-text{
+    margin: 20px auto;
+    text-align: center;
+    
+}
+.product-sam .p-text h4{
+    text-transform: capitalize;
+    font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.product-sam .p-text p{
+    font-size: 22px;
+}
+.product-sam:hover{
+    box-shadow: 0px -1px 15px -2px rgba(0,0,0,0.75);
+    border: none;
+}
+.tab-cont{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 50px;
+}
+.tab-pane form label{
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*  cart style .. */
+.step-container{
+    padding: 50px 0 30px 0;
+    background-color: #fff;
+}
+.stepper >ul{
+    display: table;
+    width:100%;
+    margin: 0;
+    padding: 0;
+
+}
+.stepper > ul > li{
+    display: table-cell;
+    width: 25%;
+    vertical-align: middle;
+    position: relative;
+    text-align: center;
+    padding: 0;
+}
+
+.stepper >ul >li span{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    z-index: 9;
+    color: #f0bd05;
+    /*background-color: #fff;*/
+}
+.stepper >ul >li.active span{
+  
+    color: #000;
+   
+}
+.stepper >ul >li span::after{
+    content: attr(data-text);
+    position: absolute;
+    display: inline-block;
+    bottom: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    width: initial;
+    left: 50%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: initial;
+    white-space: nowrap;
+    transform: translateX(-50%);
+    font-family: "Roboto",sans-serif;
+}
+.table-wrapper{
+    padding: 40px 0;
+    margin-bottom: 50px;
+}
+.table-header{
+    width: 100%;
+    position: relative;
+    display: table;
+    vertical-align: middle;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #fbfbfb;
+}
+.table-header > div{
+    padding: 10px 30px;
+    display: table-cell;
+    vertical-align: middle;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cart-item{
+    display: table;
+    width: 100%;
+    position: relative;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #d8d7d7;
+}
+.cart-block{
+
+}
+.cart-item >div{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 20px;
+}
+
+.cart-block >div:nth-child(1){
+    width: 15%;
+}
+.cart-block >div:nth-child(2){
+    width: 45%;
+}
+.cart-block >div:nth-child(3){
+    width: 10%;
+}
+.cart-block >div:nth-child(4){
+    width: 30%;
+}
+.cart-item >div.quantity{
+    float: none;
+    text-align: center;
+}
+.cart-item >div.price > span{
+    display: block;
+    text-align: right;
+}
+.cart-item >div.price > span.final{
+    margin: 0;
+    font-size: 20px;
+}
+.cart-item >div.title{
+    text-transform: uppercase;
+    font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} 
+.delete-icon{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 30px;
+  height: 20px;
+  font-family: 'Times New Roman', Times, serif;
+ 
+}
+.delete-icon:hover{
+    background-color: #fbfbfb;
+}
+.cart-footer{
+    display: table;
+    vertical-align: middle;
+    padding: 15px 30px;
+    margin-top: 1px;
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+}
+.cart-footer > div{
+    display: table-cell;
+}
+.cart-footer > div .total{
+    font-size: 25px;
+
+}
+.cart-footer>div:nth-child(1){
+    width: 50%;
+}
+.cart-footer>div:nth-child(2){
+    width: 50%;
+}
+
+/*   checkout style ...*/
+.pay-btn{
+   width: 100%;
+   padding: 15px 30px;
+   display: flex;
+   justify-content: space-between;
+}
+.pay-btn a{
+    padding: 10px 20px;
+    text-transform: capitalize;
+}
+.form-head{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.checkout-section{
+    margin-bottom: 100px;
+}
+.register-form{
+    display: block;
+}
+.login-form{
+    display: none;
+}
+
+
+/* payment style ...*/
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  .order-wrapper > h2{
+      text-transform: uppercase;
+      padding: 20px 30px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .order-container{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .order-container .order-item{
+      padding: 10px 20px;
+  }
+  .order-container .order-item h4{
+      text-transform: capitalize;
+      font-family: 'Times New Roman', Times, serif;
+  }
+  .order-container .order-item p{
+      font-size: 22px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .shipping-cont{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+      padding: 20px 10px;
+  }
+  .shipping-cont > .ship-item{
+      padding: 20px 10px;
+  }
+  .shipping-cont > .ship-item > h4{
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+  .shipping-cont > .ship-item > p{
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .extra-text p{
+      line-height: 30px;
+      letter-spacing: 2px;
+  }
+
+  /* receipt page style ...*/
+  .receipt-container{
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .receipt-container .receipt-1{
+      padding: 20px 0px;
+  }
+  .receipt-container .receipt-1 h4{
+    text-transform: capitalize;
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 15px;
+  } 
+  .receipt-container .receipt-1 p{
+      font-size: 22px;
+  }
+
+  @media(max-width:948px){
+        
+        .tab-cont{ 
+                min-height: 100vh;
+                margin-bottom: 20px; 
+        }
+        .stepper >ul >li span{
+            position: relative;
+            width: 50px;
+            height: 60px;
+            font-size: 50px;
+            line-height: 60px;
+            color: #f0bd05;
+            /*background-color: #fff;*/
+        }
+        .stepper > ul > li.col-md-3{
+            width: 25%;
+        }
+  }
+  @media(max-width:724px){
+        .product{
+            padding-bottom: 50px;
+        }
+    .tab-cont{ 
+            min-height: 100vh;
+            padding-bottom: 100px;
+            margin-bottom: 20px;
+            overflow: auto; 
+    }
+    .step-container{
+        padding: 30px 0 20px 0;
+        
+    }
+    .table-header{
+        display: none;
+    }
+    .cart-item{
+        display: block;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+        height: 300px;
+                  
+    }
+    .table-wrapper{
+         min-height: 100vh;
+    }
+    .cart-block{
+        padding-bottom: 15px;
+    }
+    .cart-item > div{
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
+    .cart-block >div:nth-child(1){
+        width: 100%;
+    }
+    .cart-block >div:nth-child(2){
+        width: 100%;
+    }
+    .cart-block >div:nth-child(3){
+        width: 20%;
+    }
+    .cart-block >div:nth-child(4){
+        width: 50%;
+    }
+    .cart-item .image{
+        width: 100%;
+        height: 200px;
+
+    }
+    .cart-item .image img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .cart-item >div.price{
+       float: left;
+       width: 50%;
+    }
+    .cart-item >div.quantity{
+        float: left;
+        width: 50%;
+    }
+    .footer{
+        
+        bottom: 0;
+    }
+}
+
+
+
